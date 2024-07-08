@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 
-import './globals.css'
+import './globals.scss'
 import Link from 'next/link'
 
 export const metadata: Metadata = {

@@ -1,0 +1,36 @@
+$image-width: 320px;
+
+.hotelDetails {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: white;
+  z-index: 1;
+  height: 100%;
+  overflow: auto;
+  width: calc(100% - $image-width);
+  left: $image-width;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.hotelDetailsOpen {
+  transform: translateX(0);
+}
+
+.hotelDetailsDescriptionContainer {
+  flex: 1 1 60%;
+}
+
+.hotelDetailDescription {
+  flex: 1 0 60%;
+  margin-top: 0;
+}
+
+.hotelFacilities {
+  flex: 1 0 40%;
+  margin-top: 0;
+  margin-left: 24px;
+}

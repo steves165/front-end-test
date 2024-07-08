@@ -41,7 +41,7 @@ export namespace FilterService {
                 return false
             }
 
-            if ((hotelFacilityFilters.length > 0 && !hotelFacilityFilters.some((facility: string): boolean => holiday.hotel.content.hotelFacilities.includes(facility))) ||
+            if ((hotelFacilityFilters.length > 0 && !hotelFacilityFilters.every((facility: string): boolean => holiday.hotel.content.hotelFacilities.includes(facility))) ||
                 hotelFacilityFilters.length > 0 && holiday.hotel.content.hotelFacilities.length === 0) {
                 return false
             }
